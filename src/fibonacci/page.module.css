@@ -1,0 +1,136 @@
+.article {
+  max-width: 860px;
+  margin: 24px auto;
+  padding: 32px clamp(18px, 4vw, 48px);
+  border-radius: 20px;
+  background: #101a21;
+  color: #e4edea;
+  line-height: 1.8;
+  font-size: 16px;
+}
+.article h1 {
+  color: #e4edea;
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -1px;
+  margin: 20px 0;
+}
+.article h2 {
+  color: #85dec5;
+  font-size: 23px;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+.article p,
+.article li {
+  color: #bfd0d3;
+}
+.article strong {
+  color: #e4edea;
+}
+.article section {
+  margin: 32px 0;
+  padding-top: 26px;
+  border-top: 1px solid #344953;
+}
+.article ul {
+  list-style: disc;
+  padding-left: 24px;
+}
+.article li {
+  margin: 8px 0;
+}
+.article pre {
+  overflow-x: auto;
+  background: #192831;
+  color: #a7efd9;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.article .eyebrow {
+  color: #85dec5;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 32px;
+}
+.back {
+  display: inline-block;
+  color: #85dec5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.back:focus-visible {
+  outline: 3px solid #f1c873;
+  outline-offset: 4px;
+}
+.article .formula {
+  color: #f1c873;
+  font-size: 25px;
+  text-align: center;
+}
+.note {
+  padding: 18px;
+  border-left: 3px solid #f1c873;
+  background: #192831;
+  border-radius: 0 10px 10px 0;
+  color: #bfd0d3;
+  font-size: 14px;
+  margin: 22px 0;
+}
+.equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+}
+.matrix {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 24px);
+  text-align: center;
+  gap: 3px 10px;
+  border-left: 2px solid #85dec5;
+  border-right: 2px solid #85dec5;
+  border-radius: 12px;
+  padding: 6px 12px;
+  color: #e4edea;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.examples {
+  padding: 10px;
+  background: #192831;
+  border-radius: 12px;
+}
+@media (max-width: 480px) {
+  .article {
+    margin: 10px 0;
+  }
+  .equation {
+    gap: 10px;
+  }
+  .examples .equation > span:last-child {
+    font-size: 14px;
+  }
+}
+.graph {
+  margin: 24px 0;
+  padding: 16px 8px;
+  background: #192831;
+  border: 1px solid #344953;
+  border-radius: 14px;
+}
+.graph svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.graph figcaption {
+  padding: 8px 12px;
+  color: #bfd0d3;
+  font-size: 13px;
+  line-height: 1.6;
+}

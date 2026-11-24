@@ -1,0 +1,179 @@
+.app-nav {
+  max-width: 1240px;
+  margin: auto;
+  padding: 22px 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #304550;
+  font-size: 14px;
+}
+.app-nav a {
+  color: #b5cbce;
+  text-decoration: none;
+  padding: 9px 10px;
+  border-radius: 8px;
+}
+.app-nav a:hover,
+.app-nav a[aria-current="page"] {
+  background: #243b43;
+  color: #a7efd9;
+}
+.app-nav .brand {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #e4edea;
+}
+.brand span {
+  color: #85dec5;
+}
+.app-nav > div {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.app-nav a:focus-visible {
+  outline: 3px solid #f1c873;
+  outline-offset: 3px;
+}
+.not-found {
+  max-width: 800px;
+  padding: 32px;
+  margin: auto;
+}
+.not-found a {
+  color: #85dec5;
+}
+.cf-lab .learning-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 30px;
+}
+.learning-path span {
+  padding: 8px 14px;
+  border: 1px solid #37505a;
+  border-radius: 30px;
+  color: #bfd0d3;
+  font-size: 14px;
+}
+.cf-lab .intro-note {
+  background: #192831;
+  border-left: 3px solid #85dec5;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 24px;
+}
+.cf-lab h2 {
+  font-size: 17px;
+}
+.cf-lab .eyebrow {
+  font-size: 12px;
+}
+.cf-lab .current > span:first-child {
+  font-size: 12px;
+}
+.cf-lab .toolbar label,
+.cf-lab .presets > span,
+.cf-lab .count-grid span {
+  font-size: 14px;
+}
+.cf-lab .pill,
+.cf-lab .status,
+.cf-lab .note,
+.cf-lab footer,
+.cf-lab .muted {
+  font-size: 14px;
+}
+.cf-lab .parity-word span,
+.cf-lab .parity-word small,
+.cf-lab .word-list p,
+.cf-lab .explanation p {
+  font-size: 14px;
+}
+.cf-lab .legend {
+  font-size: 14px;
+}
+.cf-lab .trace-item small {
+  font-size: 12px;
+}
+.cf-lab .trace-item {
+  font-size: 14px;
+}
+.cf-lab .word-grid code {
+  font-size: 14px;
+}
+.cf-lab .count small {
+  white-space: nowrap;
+}
+.cf-lab .count-grid b {
+  color: #e4edea;
+}
+.cf-lab .chart {
+  height: auto;
+  min-height: 180px;
+}
+.cf-lab .chart text {
+  font-size: 14px;
+}
+.cf-lab .automaton text {
+  font-size: 15px;
+}
+.cf-lab .orbit-panel {
+  margin-top: 0;
+}
+.cf-lab [hidden],
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 760px) {
+  .app-nav {
+    padding: 18px 16px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .app-nav > div {
+    gap: 0;
+    font-size: 13px;
+  }
+  .app-nav a {
+    padding: 8px;
+  }
+  .cf-lab .learning-path {
+    gap: 6px;
+  }
+  .learning-path span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+.cf-lab .workspace {
+  align-items: start;
+}
+.cf-lab > .transport {
+  justify-content: flex-start;
+  margin: 0 0 26px;
+  gap: 10px;
+}
+.projects-footer {
+  max-width: 1176px;
+  margin: 20px auto 0;
+  padding: 24px 0 32px;
+  border-top: 1px solid #304550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+  color: #a9bfc2;
+}
+.projects-footer a { color: #e4edea; font-weight: 700; text-decoration: none; }
+.projects-footer a:hover { color: #85dec5; }
+.projects-footer a:focus-visible { color: #85dec5; outline: 3px solid #f1c873; outline-offset: 5px; }
+@media (max-width: 1240px) { .projects-footer { margin-left: 32px; margin-right: 32px; } }
+@media (max-width: 760px) { .projects-footer { margin-left: 16px; margin-right: 16px; } }
